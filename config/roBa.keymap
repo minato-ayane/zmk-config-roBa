@@ -66,19 +66,10 @@
 &kp Q             &kp W                &kp E    &kp R                   &kp T                                                    &kp Y                 &kp U  &lt 5 I    &kp O    &kp P
 &mt LG(A) A       &kp S                &kp D    &kp F                   &kp G                      &none            &none        &kp H                 &kp J  &kp K      &kp L    &lt 5 MINUS
 &mt LEFT_SHIFT Z  &kp X                &kp C    &kp V                   &kp B                      &none            &none        &kp N                 &kp M  &kp COMMA  &kp DOT  &mkp MB2
-&kp LEFT_ALT      &mt LEFT_CONTROL F7  &kp TAB  &mt LEFT_GUI BACKSPACE  &mt LEFT_SHIFT LANGUAGE_2  &lt 1 SPACE      &lt 2 ENTER  &mt LEFT_SHIFT LANG1                             &mkp MB1
+&kp LEFT_ALT      &mt LEFT_CONTROL F7  &kp TAB  &mt LEFT_GUI BACKSPACE  &mt LEFT_SHIFT LANGUAGE_2  &lt 2 SPACE      &lt 1 ENTER  &mt LEFT_SHIFT LANG1                             &mkp MB1
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
-        };
-
-        FUNCTION {
-            bindings = <
-&kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3  &kp NUMBER_4         &kp N5                                                  &kp NUMBER_6          &kp N7                 &kp N8             &kp N9           &kp N0
-&kp KP_PLUS   &kp MINUS      &kp ASTRK     &kp SLASH            &kp KP_EQUAL         &none      &none                   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp MINUS        &kp SLASH
-&kp AT_SIGN   &kp UNDER      &kp HASH      &mt LS(LA(LG(W))) V  &mt LESS_THAN COMMA  &none      &none                   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp COLON          &kp EXCLAMATION  &kp QUESTION
-&kp PERCENT   &kp AMPERSAND  &kp TILDE     &none                &none                &none      &mt LGUI K_APPLICATION  &mt LGUI K_APP                                                                   &kp LS(LG(NUMBER_4))
-            >;
         };
 
         NUM {
@@ -87,6 +78,15 @@
 &kp LG(LC(LEFT_ARROW))   &kp C_VOLUME_UP    &kp F11  &kp F12  &kp F1  &none            &none  &kp LEFT            &kp RIGHT      &kp UP_ARROW      &kp DOWN      &kp PAGE_UP
 &kp LC(LG(RIGHT_ARROW))  &kp C_VOL_DN       &kp F10  &kp F13  &kp F9  &bootloader      &none  &kp LS(LEFT_ARROW)  &kp LS(RIGHT)  &kp LS(UP_ARROW)  &kp LS(DOWN)  &kp PAGE_DOWN
 &kp LC(LG(F))            &kp C_MENU_ESCAPE  &none    &none    &none   &none            &none  &kp LEFT_SHIFT                                                     &mkp MB1
+            >;
+        };
+
+        FUNCTION {
+            bindings = <
+&kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3  &kp NUMBER_4         &kp N5                                                  &kp NUMBER_6          &kp N7                 &kp N8             &kp N9           &kp N0
+&kp KP_PLUS   &kp MINUS      &kp ASTRK     &kp SLASH            &kp KP_EQUAL         &none      &none                   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp MINUS        &kp SLASH
+&kp AT_SIGN   &kp UNDER      &kp HASH      &mt LS(LA(LG(W))) V  &mt LESS_THAN COMMA  &none      &none                   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp COLON          &kp EXCLAMATION  &kp QUESTION
+&kp PERCENT   &kp AMPERSAND  &kp TILDE     &none                &none                &none      &mt LGUI K_APPLICATION  &mt LGUI K_APP                                                                   &kp LS(LG(NUMBER_4))
             >;
         };
 
@@ -121,10 +121,10 @@
 
         layer_6 {
             bindings = <
-&trans  &trans        &trans        &trans        &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
-&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
+&trans  &trans        &trans        &trans        &trans                                &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans  &trans        &trans        &trans        &trans  &bt BT_PRV       &bt BT_NXT   &trans        &trans        &trans        &trans        &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &bootloader      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
+&trans  &trans        &trans        &trans        &trans  &trans           &trans       &trans                                                  &bt BT_CLR_ALL
             >;
         };
     };
