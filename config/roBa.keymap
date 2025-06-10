@@ -74,10 +74,10 @@
 
         NUM {
             bindings = <
-&kp F1                   &kp F2             &kp F3   &kp F4   &kp F5                          &kp F6              &kp F7         &kp F8            &kp F9        &kp F10
-&kp LG(LC(LEFT_ARROW))   &kp C_VOLUME_UP    &kp F11  &kp F12  &kp F1  &none            &none  &kp LEFT            &kp RIGHT      &kp UP_ARROW      &kp DOWN      &kp PAGE_UP
-&kp LC(LG(RIGHT_ARROW))  &kp C_VOL_DN       &kp F10  &kp F13  &kp F9  &bootloader      &none  &kp LS(LEFT_ARROW)  &kp LS(RIGHT)  &kp LS(UP_ARROW)  &kp LS(DOWN)  &kp PAGE_DOWN
-&kp LC(LG(F))            &kp C_MENU_ESCAPE  &none    &none    &none   &none            &none  &kp LEFT_SHIFT                                                     &mkp MB1
+&kp F1                   &kp F2             &kp F3      &kp F4   &kp F5                          &kp F6              &kp F7         &kp F8            &kp F9        &kp F10
+&kp LG(LC(LEFT_ARROW))   &kp C_VOLUME_UP    &kp F11     &kp F12  &kp F1  &none            &none  &kp LEFT            &kp RIGHT      &kp UP_ARROW      &kp DOWN      &kp PAGE_UP
+&kp LC(LG(RIGHT_ARROW))  &kp C_VOL_DN       &kp F10     &kp F13  &kp F9  &bootloader      &none  &kp LS(LEFT_ARROW)  &kp LS(RIGHT)  &kp LS(UP_ARROW)  &kp LS(DOWN)  &kp PAGE_DOWN
+&kp LC(LG(F))            &kp C_MENU_ESCAPE  &kp ESCAPE  &none    &none   &none            &none  &kp LEFT_SHIFT                                                     &mkp MB1
             >;
         };
 
